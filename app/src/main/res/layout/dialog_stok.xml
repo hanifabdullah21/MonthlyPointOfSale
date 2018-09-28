@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/activity_4"
+    app:cardCornerRadius="@dimen/activity_4">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/include_btn_bottom"
+            layout="@layout/layout_btn_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/include_btn_bottom"
+            android:layout_margin="@dimen/activity_4"
+            android:orientation="vertical">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/medt_id"
+                style="@style/st_medt_form"
+                android:clickable="true"
+                android:editable="false"
+                android:hint="Id Item"
+                android:inputType="none"
+                tools:text="Id Item" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/medt_nama"
+                style="@style/st_medt_form"
+                android:hint="Nama Item"
+                android:inputType="text"
+                tools:text="Nama Item" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/medt_harga"
+                style="@style/st_medt_form"
+                android:hint="Harga Item"
+                android:inputType="number"
+                tools:text="Harga Item" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/medt_stok"
+                style="@style/st_medt_form"
+                android:hint="Stok Item"
+                android:inputType="number"
+                tools:text="Stok Item" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+

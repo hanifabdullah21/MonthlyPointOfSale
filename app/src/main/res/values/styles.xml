@@ -1,0 +1,89 @@
+<resources
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="st_card_login">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="cardCornerRadius">8dp</item>
+    </style>
+
+    <style name="st_tv_formlogin">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:layout_marginRight">4dp</item>
+    </style>
+
+    <style name="st_card_MA">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?android:attr/actionBarSize</item>
+        <item name="android:layout_marginLeft">@dimen/activity_8</item>
+        <item name="android:layout_marginRight">@dimen/activity_8</item>
+        <item name="android:layout_marginTop">@dimen/activity_8</item>
+        <item name="android:layout_marginBottom">@dimen/activity_4</item>
+        <item name="cardElevation">4dp</item>
+        <item name="cardCornerRadius">8dp</item>
+    </style>
+
+    <style name="st_tv_cardMA">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/medium_text</item>
+        <item name="android:fontFamily">@font/lato_regular</item>
+        <item name="android:layout_margin">@dimen/activity_8</item>
+    </style>
+
+    <style name="st_medt_form">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/activity_4</item>
+        <item name="android:layout_marginLeft">@dimen/activity_8</item>
+        <item name="android:layout_marginRight">@dimen/activity_8</item>
+        <item name="android:layout_marginTop">@dimen/activity_4</item>
+        <item name="android:fontFamily">@font/lato_regular</item>
+        <item name="android:paddingLeft">@dimen/activity_4</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">@dimen/medium_text</item>
+        <item name="met_floatingLabel">normal</item>
+        <item name="met_floatingLabelAlwaysShown">true</item>
+        <item name="met_floatingLabelTextSize">@dimen/small_text</item>
+    </style>
+
+    <style name="st_tv_form">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/lato_regular</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        
+        <item name="android:textSize">@dimen/medium_text</item>
+    </style>
+
+    <style name="st_cv_btnbottom">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">8dp</item>
+    </style>
+
+    <style name="st_tv_btnbottom">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/medium_text</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingTop">@dimen/activity_8</item>
+        <item name="android:paddingBottom">@dimen/activity_8</item>
+        <item name="android:layout_margin">@dimen/activity_4</item>
+    </style>
+</resources>

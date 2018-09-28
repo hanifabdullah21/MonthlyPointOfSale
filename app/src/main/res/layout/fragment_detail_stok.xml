@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".stok.fragment.DetailStokFragment">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/activity_4"
+        app:cardCornerRadius="@dimen/activity_4">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/include_btn_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true">
+
+                <include
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    layout="@layout/layout_btn_bottom" />
+
+                <include
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    layout="@layout/layout_btn_bottom2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_above="@id/include_btn_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/activity_4"
+                android:orientation="vertical">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/medt_id"
+                    android:hint="Id Item"
+                    tools:text="Id Item"
+                    android:inputType="none"
+                    android:editable="false"
+                    style="@style/st_medt_form" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/medt_nama"
+                    android:hint="Nama Item"
+                    tools:text="Nama Item"
+                    android:inputType="none"
+                    android:editable="false"
+                    style="@style/st_medt_form" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/medt_harga"
+                    android:hint="Harga Item"
+                    tools:text="Harga Item"
+                    android:inputType="none"
+                    android:editable="false"
+                    style="@style/st_medt_form" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/medt_stok"
+                    android:hint="Stok Item"
+                    tools:text="Stok Item"
+                    android:inputType="none"
+                    android:editable="false"
+                    style="@style/st_medt_form" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</FrameLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Text-->
+    <dimen name="small_text">12sp</dimen>
+    <dimen name="normal_text">14sp</dimen>
+    <dimen name="medium_text">16sp</dimen>
+    <dimen name="large_text">18sp</dimen>
+    <dimen name="giant_text">20sp</dimen>
+
+    <!--Margin Padding-->
+    <dimen name="activity_4">4dp</dimen>
+    <dimen name="activity_8">8dp</dimen>
+    <dimen name="activity_12">12dp</dimen>
+    <dimen name="activity_16">16dp</dimen>
+    <dimen name="activity_20">20dp</dimen>
+    <dimen name="activity_24">24dp</dimen>
+    <dimen name="activity_28">28dp</dimen>
+
+</resources>

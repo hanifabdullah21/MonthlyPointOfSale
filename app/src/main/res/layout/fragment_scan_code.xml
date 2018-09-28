@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".newitem.fragment.ScanCodeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/line_kode"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:gravity="center_vertical"
+            android:layout_margin="@dimen/activity_4"
+            android:layout_alignParentBottom="true">
+
+            <EditText
+                android:id="@+id/edt_kode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/lato_regular"
+                android:hint="Masukkan Kode"
+                android:inputType="number"
+                android:textSize="@dimen/medium_text" />
+
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato_regular"
+                android:text="Next"
+                android:textSize="@dimen/small_text" />
+        </LinearLayout>
+
+        <me.dm7.barcodescanner.zxing.ZXingScannerView
+            android:id="@+id/sv_scanner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/line_kode">
+
+        </me.dm7.barcodescanner.zxing.ZXingScannerView>
+
+    </RelativeLayout>
+
+</FrameLayout>

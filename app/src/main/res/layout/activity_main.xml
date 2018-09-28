@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        layout="@layout/toolbar_logout"/>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/activity_24"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_penjualan"
+            style="@style/st_card_MA">
+
+            <TextView
+                android:text="Penjualan"
+                style="@style/st_tv_cardMA" />
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_tambahItem"
+            style="@style/st_card_MA">
+
+            <TextView
+                android:text="Tambah Item"
+                style="@style/st_tv_cardMA" />
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_stok"
+            style="@style/st_card_MA">
+
+            <TextView
+                android:text="Stok"
+                style="@style/st_tv_cardMA" />
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_rekap"
+            style="@style/st_card_MA">
+
+            <TextView
+                android:text="Rekap Penjualan"
+                style="@style/st_tv_cardMA" />
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+</LinearLayout>
