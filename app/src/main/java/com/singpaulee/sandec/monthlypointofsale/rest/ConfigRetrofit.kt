@@ -7,7 +7,8 @@ import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.TimeUnit
 
 object ConfigRetrofit {
-    var BASE_URL_API:String = ""
+    //TODO Set BET BASE URL
+    var BASE_URL_API:String = "http://172.24.250.113/possandec/"
 
     val httpClient : OkHttpClient =
             OkHttpClient.Builder()
