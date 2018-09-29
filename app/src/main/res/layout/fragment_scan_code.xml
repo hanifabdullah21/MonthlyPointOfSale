@@ -37,7 +37,7 @@
         </LinearLayout>
 
         <me.dm7.barcodescanner.zxing.ZXingScannerView
-            android:id="@+id/sv_scanner"
+            android:id="@+id/sv_scanner_scf"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_above="@id/line_kode">
