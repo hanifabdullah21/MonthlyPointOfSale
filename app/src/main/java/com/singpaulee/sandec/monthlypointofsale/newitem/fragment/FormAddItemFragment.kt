@@ -8,6 +8,8 @@ import android.view.View
 import android.view.ViewGroup
 
 import com.singpaulee.sandec.monthlypointofsale.R
+import com.singpaulee.sandec.monthlypointofsale.helpers.HelperView
+import kotlinx.android.synthetic.main.fragment_form_add_item.view.*
 import kotlinx.android.synthetic.main.layout_btn_bottom.*
 import kotlinx.android.synthetic.main.layout_btn_bottom.view.*
 import org.jetbrains.anko.sdk25.coroutines.onClick
@@ -24,6 +26,13 @@ private const val ARG_PARAM2 = "param2"
 class FormAddItemFragment : Fragment() {
 
     lateinit var itemView: View
+    var idItem : String = ""
+
+    //TODO Get Data yang diparsing
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        idItem = arguments?.getString(HelperView.Gift.IDITEM).toString()
+    }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
@@ -31,6 +40,9 @@ class FormAddItemFragment : Fragment() {
         itemView = inflater.inflate(R.layout.fragment_form_add_item, container, false)
 
         itemView.tv_btnbottom.text = "Tambah item"
+
+        //Set Id ti edittext
+        itemView.medt_id.setText("$idItem")
 
         //TODO Handler Button Click
         cv_btnbottom.onClick {
@@ -52,7 +64,7 @@ class FormAddItemFragment : Fragment() {
     }
 
     private fun validasi(): Boolean {
-        return false
+        return true
     }
 
 
